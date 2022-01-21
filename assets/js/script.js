@@ -1,26 +1,31 @@
 // VARIABLES 
 
 var dateNow = moment().format("dddd, MMMM Do YYYY");
-console.log(dateNow);
-var tasks = $('.text-area').textInput;
+//console.log(dateNow);
+var timeNow = moment().format("hmmA");
+console.log(timeNow);
 
 //FUNCTIONS
+// displays current date 
 $("#currentDay").text(dateNow);
-// INITIATORS
-$('.text-area').click( function() {
-   console.log("yessir")
-   var textInput = $("<textarea>")
-  .addClass("form-control")
-  .val(tasks);
-  $(this).replaceWith(textInput);
-  textInput.trigger("focus");
-  $(".text-area").on("blur", "textarea", function() {
-      $(this).replaceWith(tasks);
-      var taskP = $("<div>")
-      .addClass("text-area")
-      .text(text);
+
+//  iterates through time blocks and changes bg-color
+// based on if past,present or future compared to current time
+$('.hour').each(function (index) {
+    if( this.text === timeNow) {
+        $('.col-8').addClass('present');
+    } else if(this.text < timeNow){
+        $('.col-8').addClass('past');
+    } else {
+        $('.col-8').addClass('future');
+    }
+    console.log( index + ": " + $( this ).text() );
+});
+
+//INITIATORS
+
+   
+
+
     
-    // replace textarea with p element
-    $(this).replaceWith(taskP);
-});
-});
+

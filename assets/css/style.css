@@ -6,7 +6,7 @@ body {
 
 
   
-  .text-area {
+  textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -47,7 +47,7 @@ body {
   }
   
   .present {
-    background-color: green;
+    background-color: rgb(85, 243, 85);
     color: white;
   }
   
