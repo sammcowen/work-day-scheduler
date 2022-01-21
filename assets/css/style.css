@@ -3,6 +3,13 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+
+  .time-col {
+    border: 2px dashed grey;
+    text-align:right;
+    border-radius: 15px;
+    padding: 5px;
+  }
   
   textarea{
     background: transparent;
@@ -25,10 +32,7 @@ body {
     white-space: pre-wrap;
   }
   
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
+
   
   .row {
     white-space: pre-wrap;
