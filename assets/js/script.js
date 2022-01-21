@@ -1,5 +1,5 @@
-var rightNow = moment().format("dddd, MMMM Do YYYY");
-console.log(rightNow);
+var dateNow = moment().format("dddd, MMMM Do YYYY");
+console.log(dateNow);
 
-$("#currentDay").text(rightNow);
+$("#currentDay").text(dateNow);
 

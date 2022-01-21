@@ -4,14 +4,9 @@ body {
     line-height: 1;
   }
 
-  .time-col {
-    border: 2px dashed grey;
-    text-align:right;
-    border-radius: 15px;
-    padding: 5px;
-  }
+
   
-  textarea{
+  .text-area{
     background: transparent;
     border: none;
     resize: none;
@@ -31,19 +26,19 @@ body {
   .description{
     white-space: pre-wrap;
   }
-  
-
-  
+   
   .row {
     white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
+  height: 80px;
+  border-top: 1px solid white;
   }
+  
   
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    text-align: right;
   }
   
   .past {
@@ -52,12 +47,12 @@ body {
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: green;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: violet;
     color: white;
   }
   
