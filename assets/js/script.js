@@ -5,10 +5,15 @@ var dateNow = moment().format("dddd, MMMM Do YYYY");
 var timeNow = Number(moment().format("H"));
 console.log(timeNow);
 const hours = $('.hour');
+
 //INITIATORS
  $('.saveBtn').click(function() {
     console.log('start button clicked');
- });
+   var task = $(this).prev().val();
+   localStorage.setItem("task", task);
+   console.log("task", task);
+
+});
  
 
 //FUNCTIONS
