@@ -5,11 +5,12 @@ console.log(dateNow);
 var timeNow = Number(moment().format("H"));
 console.log(timeNow);
 const hours = $('.hour');
-var please = $('.example');
+
 
 //FUNCTIONS
 // displays current date 
 $("#currentDay").text(dateNow);
+
 
 //INITIATORS
  $('.saveBtn').click(function() {
@@ -17,11 +18,6 @@ $("#currentDay").text(dateNow);
     var task = $(this).siblings(".example").val();
     var taskTime = $(this).parent().attr("id");
    localStorage.setItem(taskTime, task);
-   //var persist = localStorage.getItem(taskTime);
-   //please.value = persist;
-   //console.log(taskTime, task);
-   
-
 });
 
 
@@ -40,6 +36,9 @@ $.each(hours, function(index, value) {
          $(this).next().addClass('past');
      }
     });
+window.onload = function(){
+    console.log("HELLO");
+}
         
 
 
