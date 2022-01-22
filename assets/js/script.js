@@ -7,6 +7,7 @@ console.log(timeNow);
 const hours = $('.hour');
 
 
+
 //FUNCTIONS
 // displays current date 
 $("#currentDay").text(dateNow);
@@ -36,13 +37,10 @@ $.each(hours, function(index, value) {
          $(this).next().addClass('past');
      }
     });
-window.onload = function(){
-    console.log("HELLO");
-}
-        
+
+    // UPON REFRESH, RETRIEVE THE LOCAL STORAGE AND HAVE IT APPEAR IN THE TEXTAREAS
 
 
- 
   
 
 
