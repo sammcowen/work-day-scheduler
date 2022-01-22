@@ -19,6 +19,8 @@ $("#currentDay").text(dateNow);
     var task = $(this).siblings(".example").val();
     var taskTime = $(this).parent().attr("id");
    localStorage.setItem(taskTime, task);
+  // $(".example").val() = localStorage.getItem(taskTime);
+   console.log(localStorage.getItem(taskTime));
 });
 
 
@@ -26,7 +28,7 @@ $("#currentDay").text(dateNow);
 //  iterates through time blocks and changes bg-color
 // based on if past,present or future compared to current time
 $.each(hours, function(index, value) {
-   // console.log(timeNow);
+   
     console.log(Number(value.dataset.hour));
     console.log(Number(value.dataset.hour) > timeNow);
      if(Number(value.dataset.hour) > timeNow) {
@@ -41,6 +43,6 @@ $.each(hours, function(index, value) {
     // UPON REFRESH, RETRIEVE THE LOCAL STORAGE AND HAVE IT APPEAR IN THE TEXTAREAS
 
 
-  
+
 
 
