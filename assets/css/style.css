@@ -45,6 +45,7 @@ body {
     background-color: darkgray;
     color: black;
     pointer-events: none;
+    text-decoration: line-through;
   }
   
   .present {
