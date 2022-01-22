@@ -1,24 +1,28 @@
 // VARIABLES 
 
 var dateNow = moment().format("dddd, MMMM Do YYYY");
-//console.log(dateNow);
+console.log(dateNow);
 var timeNow = Number(moment().format("H"));
 console.log(timeNow);
 const hours = $('.hour');
-
-//INITIATORS
- $('.saveBtn').click(function() {
-    console.log('start button clicked');
-   var task = $(this).prev().val();
-   localStorage.setItem("task", task);
-   console.log("task", task);
-
-});
- 
+var please = $('.example');
 
 //FUNCTIONS
 // displays current date 
 $("#currentDay").text(dateNow);
+
+//INITIATORS
+ $('.saveBtn').click(function() {
+    console.log('start button clicked');
+    var task = $(this).siblings(".example").val();
+    var taskTime = $(this).parent().attr("id");
+   localStorage.setItem(taskTime, task);
+   //var persist = localStorage.getItem(taskTime);
+   //please.value = persist;
+   //console.log(taskTime, task);
+   
+
+});
 
 
 
