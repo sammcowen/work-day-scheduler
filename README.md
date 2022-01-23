@@ -27,6 +27,8 @@ The text will persist.
  the page, the time has changed.
 Thus the planner has updated reflecting which hour is NOW CURRENT, PAST or FUTURE. Note the past time blocks have a line through them and CANNOT BE clicked
 into or edited anymore for the day. 
+![Work Day Scheduler](https://user-images.githubusercontent.com/92121595/150700238-f882ece0-dd66-4191-ba80-5cc3fae187c0.gif)
+
 
 
 
